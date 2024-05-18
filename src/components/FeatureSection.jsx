@@ -1,13 +1,13 @@
 import React from 'react'
 import { features } from '../constants'
-
+import { motion } from "framer-motion"
 
 function FeatureSection() {
   return (
     
     <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
       <div className="text-center">
-        <span className="h-6 px-2 py-1 text-sm font-medium text-orange-500 uppercase rounded-full bg-neutral-900">
+        <span  className="h-6 px-2 py-1 text-sm font-medium text-orange-500 uppercase rounded-full bg-neutral-900">
           Feature
         </span>
         <h2 className="mt-10 text-3xl tracking-wide sm:text-5xl lg:text-6xl lg:mt-20">

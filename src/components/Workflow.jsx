@@ -2,6 +2,8 @@ import React from 'react'
 import { CheckCircle2 } from "lucide-react";
 import codeImg from "../assets/code.jpg";
 import { checklistItems } from "../constants";
+import { motion } from "framer-motion";
+
 
 function Workflow() {
   return (
@@ -16,9 +18,9 @@ function Workflow() {
        
     <div className='flex flex-wrap justify-center'>
 
-        <div className='w-full p-2 lg:w-1/2'>
+        <motion.div whileHover={{rotate:6}} className='w-full p-2 lg:w-1/2'>
             <img src={codeImg}/>
-        </div>
+        </motion.div>
 
         <div className='w-full pt-12 lg:w-1/2'>
               {checklistItems.map((item,index) =>(
